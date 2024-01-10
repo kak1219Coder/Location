@@ -7,17 +7,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="712.0" styleClass="parent" stylesheets="@../Style/main.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.MainController">
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="712.0" styleClass="parent" stylesheets="@../Style/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
    <children>
       <Pane layoutX="20.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
          <children>
-            <VBox layoutX="23.0" layoutY="-30.0" prefHeight="394.0" prefWidth="249.0" />
-            <Button layoutX="525.0" layoutY="142.0" mnemonicParsing="false" text="Se connecter" />
-            <Label layoutX="481.0" layoutY="94.0" text="etes-vous inscirte?" textFill="#fffefe">
+            <VBox fx:id="VBox" layoutX="50.0" layoutY="-30.0" prefHeight="394.0" prefWidth="278.0" styleClass="white-pane" />
+            <Button fx:id="btnConnecter" layoutX="464.0" layoutY="167.0" mnemonicParsing="false" onAction="#openSignIn" styleClass="trans-btn-white-border" text="Se connecter" />
+            <Label layoutX="420.0" layoutY="119.0" opacity="0.4" text="etes-vous inscirte?" textFill="WHITE">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
+            <Label layoutX="63.0" layoutY="131.0" text="etes-vous inscirte?" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnInscrire" layoutX="75.0" layoutY="167.0" mnemonicParsing="false" onAction="#openSignUp" styleClass="trans-btn-white-border" text="Se connecter" />
          </children>
       </Pane>
    </children>

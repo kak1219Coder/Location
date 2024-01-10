@@ -9,10 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="684.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.AccueilController">
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccueilController">
    <children>
-      <Pane layoutX="23.0" layoutY="14.0" prefHeight="50.0" prefWidth="644.0" style="-fx-background-color: #7294AC;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Pane layoutX="20.0" layoutY="21.0" prefHeight="50.0" prefWidth="644.0" style="-fx-background-color: #7294AC;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="21.0">
          <children>
             <Label layoutX="49.0" layoutY="17.0" text="Disponibilités" textFill="WHITE">
                <font>
@@ -20,7 +19,17 @@
                </font>
             </Label>
             <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="24.0" layoutY="31.0" size="17" />
-            <Label layoutX="158.0" layoutY="18.0" text="Label" />
+            <Label fx:id="lbldis" layoutX="147.0" layoutY="18.0" prefHeight="17.0" prefWidth="30.0" />
+            <Label layoutX="178.0" layoutY="15.0" prefHeight="17.0" prefWidth="16.0" text=")" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="16.0" prefHeight="17.0" prefWidth="16.0" text="(" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <Label layoutX="415.0" layoutY="120.0" text="Loyer" textFill="#4c8db5">
@@ -28,21 +37,21 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="415.0" layoutY="154.0" prefHeight="25.0" prefWidth="242.0" />
-      <ImageView fitHeight="312.0" fitWidth="343.0" layoutX="20.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="txtloyer" layoutX="415.0" layoutY="154.0" prefHeight="25.0" prefWidth="242.0" />
+      <ImageView fx:id="imglog" fitHeight="312.0" fitWidth="343.0" layoutX="20.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="415.0" layoutY="196.0" text="Superficie" textFill="#4c8db5">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="415.0" layoutY="221.0" prefHeight="25.0" prefWidth="242.0" />
+      <JFXTextField fx:id="txtsuperficie" layoutX="415.0" layoutY="221.0" prefHeight="25.0" prefWidth="242.0" />
       <Label layoutX="415.0" layoutY="264.0" text="Région" textFill="#4c8db5">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="415.0" layoutY="289.0" prefHeight="25.0" prefWidth="242.0" />
-      <MaterialDesignIconView fill="#4c8db5" glyphName="CHEVRON_DOUBLE_RIGHT" layoutX="513.0" layoutY="365.0" size="23" />
-      <MaterialDesignIconView fill="#4c8db5" glyphName="CHEVRON_DOUBLE_LEFT" layoutX="474.0" layoutY="365.0" size="23" />
+      <JFXTextField fx:id="txtregion" layoutX="415.0" layoutY="289.0" prefHeight="25.0" prefWidth="242.0" />
+      <MaterialDesignIconView fx:id="suivant" fill="#4c8db5" glyphName="CHEVRON_DOUBLE_RIGHT" layoutX="513.0" layoutY="365.0" onMouseClicked="#showSuivant" size="23" />
+      <MaterialDesignIconView fx:id="precedant" fill="#4c8db5" glyphName="CHEVRON_DOUBLE_LEFT" layoutX="474.0" layoutY="365.0" onMouseClicked="#showPresedant" size="23" />
    </children>
 </AnchorPane>

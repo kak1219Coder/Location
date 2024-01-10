@@ -5,11 +5,7 @@
  */
 package Controller;
 
-import Principale.ConnexionBD;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 
@@ -18,14 +14,14 @@ import javafx.fxml.Initializable;
  *
  * @author PC
  */
-public class SignUpController implements Initializable {
-     Connection con =null;
-     public PreparedStatement ps =null;
-     public ResultSet rs =null;
-   
+public class LocationController implements Initializable {
+
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      con =ConnexionBD.Connexion();
+        // TODO
     }    
     
 }

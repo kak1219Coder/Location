@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" cacheShape="false" prefHeight="415.0" prefWidth="684.0" stylesheets="@../Style/main.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.LogementsController">
+   <children>
+      <Label layoutX="34.0" layoutY="31.0" text="Rechercher">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="123.0" layoutY="29.0" prefHeight="25.0" prefWidth="112.0" promptText="identifiant" unFocusColor="#669ba7" />
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="251.0" layoutY="46.0" size="18" />
+      <JFXComboBox layoutX="34.0" layoutY="125.0" prefHeight="25.0" prefWidth="98.0" promptText="région" unFocusColor="#669ba7" />
+      <JFXComboBox layoutX="138.0" layoutY="125.0" prefHeight="25.0" prefWidth="98.0" promptText="province" unFocusColor="#669ba7" />
+      <JFXComboBox layoutX="251.0" layoutY="125.0" prefHeight="25.0" prefWidth="98.0" promptText="commune" unFocusColor="#669ba7" />
+      <JFXTextField layoutX="34.0" layoutY="82.0" prefHeight="25.0" prefWidth="204.0" promptText="addresse" unFocusColor="#669ba7" />
+      <JFXTextField layoutX="251.0" layoutY="82.0" prefHeight="25.0" prefWidth="98.0" promptText="superficie" unFocusColor="#669ba7" />
+      <JFXComboBox layoutX="34.0" layoutY="171.0" prefHeight="25.0" prefWidth="98.0" promptText="type" unFocusColor="#669ba7" />
+      <JFXTextField layoutX="136.0" layoutY="171.0" prefHeight="25.0" prefWidth="106.0" promptText="loyer" unFocusColor="#669ba7" />
+      <FontAwesomeIconView glyphName="UPLOAD" layoutX="250.0" layoutY="190.0" size="20" />
+      <Label layoutX="286.0" layoutY="185.0" text="auccun selectionnee" textFill="#58919e">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TableView layoutX="23.0" layoutY="213.0" prefHeight="140.0" prefWidth="630.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+        <columns>
+          <TableColumn prefWidth="111.0" text="id" />
+          <TableColumn prefWidth="150.0" text="addresse" />
+            <TableColumn prefWidth="92.0" text="superficie" />
+            <TableColumn prefWidth="88.0" text="loyer" />
+            <TableColumn prefWidth="85.0" text="type" />
+            <TableColumn prefWidth="103.0" text="région" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="457.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton layoutX="209.0" layoutY="364.0" styleClass="buttons" text="Ajouter" />
+      <JFXButton layoutX="288.0" layoutY="364.0" styleClass="buttons" text="Modifier" />
+      <JFXButton layoutX="377.0" layoutY="364.0" styleClass="buttons" text="Supprimer" />
+   </children>
+</AnchorPane>
